@@ -35,7 +35,7 @@ st.text('   ')
 st.text('   ')
 if(selected=='About👨‍🏫'):
   st.header('About')
-  st.image('cnn.jpg')
+  st.image('images.jpg')
   st.markdown(""" **Plant diseases enormously affect the agricultural
   crop production and quality with huge economic losses to the
   farmers and the country. This in turn increases the market price
