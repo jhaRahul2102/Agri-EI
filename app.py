@@ -26,7 +26,7 @@ st.text('         ')
 
 
 selected=option_menu(menu_title='Main Page',
-options=['About','Practical👨‍💻','Hire me👨‍🎓'],
+options=['About👨‍🏫','Practical👨‍💻','Hire me👨‍🎓'],
 icons=['house','book','envelope'],orientation='horizontal',
 )
 st.text('   ')
