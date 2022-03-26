@@ -84,7 +84,7 @@ elif(selected=='Practical👨‍💻'):
   if(plant=='Potato'):
     classes=['Early Blight','Late Blight','Healthy']
     with st.spinner('Uploading the model for prediction'):
-      model=tf.keras.models.load_model('cpotato.h5')
+      model=tf.keras.models.load_model('Potato.h5')
     if model is not None:
       time.sleep(5)
       st.subheader('Please upload the picture of potato leaf:-')
