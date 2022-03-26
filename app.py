@@ -35,7 +35,7 @@ st.text('   ')
 st.text('   ')
 if(selected=='About👨‍🏫'):
   st.header('About')
-  st.image('/content/cnn.jpg')
+  st.image('cnn.jpg')
   st.markdown(""" **Plant diseases enormously affect the agricultural
   crop production and quality with huge economic losses to the
   farmers and the country. This in turn increases the market price
@@ -46,7 +46,7 @@ if(selected=='About👨‍🏫'):
 
   st.markdown('**-----------------------------------------------------------------------------------------------**')
   st.header('Model')
-  st.image('/content/cnn1.png')
+  st.image('cnn1.png')
   st.markdown("""**The CNN-based network can be
   trained to discover diseases in plants by providing a large
   number of real-time images. In the case of lacking enough and
@@ -62,7 +62,7 @@ if(selected=='About👨‍🏫'):
 
 
   st.header('Dataset:-')
-  st.image('/content/cnn2.png')
+  st.image('cnn2.png')
   st.markdown("""**The PlantVillage dataset is created to bring efficient solutions in order to detect 39 
   different plant diseases. It contains 61,486 images of plant leaves and backgrounds.
  It was created with six different augmentation techniques for creating more diverse datasets 
