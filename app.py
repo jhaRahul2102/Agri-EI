@@ -26,7 +26,7 @@ st.text('         ')
 
 
 selected=option_menu(menu_title='Main Page',
-options=['About👨‍🏫','Practical👨‍💻','Hire me👨‍🎓'],
+options=['About','Practical👨‍💻','Hire me👨‍🎓'],
 icons=['house','book','envelope'],orientation='horizontal',
 )
 st.text('   ')
@@ -198,6 +198,4 @@ elif(selected=='Hire me👨‍🎓'):
   st.markdown('**Phone ☎️ :- 6202239544**')
   st.markdown('**Email 📧 :- rahuljha0610@gmail.com**')
   st.markdown('**Linkedin 🚦 :- [link](https://www.linkedin.com/in/rahul-jha-600047164/)**')
-  with open("rename.pdf", "rb") as file:
-
-    btn = st.download_button(label="Resume",data=file,file_name="rename.pdf")
+  
