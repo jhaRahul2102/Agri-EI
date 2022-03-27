@@ -24,7 +24,7 @@ def processing(image,model):
 lottie_coding = load_lottiefile("sunshine.json")
 st.title('Agri-EI 🍀')
 st_lottie(
-    lottie_hello,
+    lottie_coding,
     speed=1,
     reverse=False,
     loop=True,
