@@ -24,7 +24,7 @@ def processing(image,model):
 lottie_coding = load_lottiefile("girl-cycling-in-autumn.json")
 st.title('Agri-EI 🍀')
 st.markdown('**Disease Prediction for plants:-**')
-st.text('Made by Rahul Jha)
+st.text('Made by Rahul Jha')
 
 st.text('         ')
 st.text('         ')
