@@ -23,14 +23,15 @@ def processing(image,model):
   return result
 lottie_coding = load_lottiefile("girl-cycling-in-autumn.json")
 st.title('Agri-EI 🍀')
-st.markdown('**Disease Project for plants:-**')
+st.markdown('**Disease Prediction for plants:-**')
+st.text('Made by Rahul Jha)
 
 st.text('         ')
 st.text('         ')
 
 selected=option_menu(
             menu_title=None,  # required
-            options=['About👨‍🏫','Practical👨‍💻','Hire me👨‍🎓'],  # required
+            options=['About 🖥️','Practical👨‍💻','Hire me👨‍🎓'],  # required
             icons=["home", "book", "envelope"],  # optional
             menu_icon="cast",  # optional
             default_index=0,  # optional
