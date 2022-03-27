@@ -23,12 +23,26 @@ st.title('Agri-EI 🍀')
 st.text('         ')
 st.text('         ')
 
+selected=option_menu(
+            menu_title=None,  # required
+            options=['About👨‍🏫','Practical👨‍💻','Hire me👨‍🎓'],  # required
+            icons=["home", "book", "envelope"],  # optional
+            menu_icon="cast",  # optional
+            default_index=0,  # optional
+            orientation="horizontal",
+            styles={
+                "container": {"padding": "0!important", "background-color": "#fafafa"},
+                "icon": {"color": "orange", "font-size": "25px"},
+                "nav-link": {
+                    "font-size": "25px",
+                    "text-align": "left",
+                    "margin": "0px",
+                    "--hover-color": "#eee",
+                },
+                "nav-link-selected": {"background-color": "orange"},
+            },
+        )
 
-
-selected=option_menu(menu_title='Main Page',
-options=['About👨‍🏫','Practical👨‍💻','Hire me👨‍🎓'],
-icons=['house','book','envelope'],orientation='horizontal',
-)
 st.text('   ')
 st.text('   ')
 st.text('   ')
