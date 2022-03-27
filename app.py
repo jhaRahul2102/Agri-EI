@@ -21,7 +21,7 @@ def processing(image,model):
   res=model.predict(image_dims)
   result=np.argmax(res)
   return result
-lottie_coding = load_lottiefile("sunshine.json")
+lottie_coding = load_lottiefile("girl-cycling-in-autumn.json")
 st.title('Agri-EI 🍀')
 st_lottie(
     lottie_coding,
@@ -55,7 +55,16 @@ selected=option_menu(
                 "nav-link-selected": {"background-color": "orange"},
             },
         )
-
+st_lottie(
+    lottie_coding,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low", 
+    height=400,
+    width=500,
+    key=None,
+)
 st.text('   ')
 st.text('   ')
 st.text('   ')
@@ -103,6 +112,17 @@ if(selected=='About👨‍🏫'):
 
 elif(selected=='Practical👨‍💻'):
   st.header('Model Prediction')
+  lottie_coding1=load_lottiefile("95075-computer-animation.json")
+  st_lottie(
+    lottie_coding1,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low", 
+    height=700,
+    width=600,
+    key=None,
+)
   st.subheader('Please choose the plant to predict the disease')
   plant=st.radio('Please choose the plant to predict the disease:-',options=['Apple','Grape','Corn','Tomato','Potato'])
   st.text('    ')
@@ -215,6 +235,17 @@ elif(selected=='Practical👨‍💻'):
 
 elif(selected=='Hire me👨‍🎓'):
   st.header('About me')
+  lottie_coding2=load_lottiefile("80680-online-study.json")
+  st_lottie(
+    lottie_coding2,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low", 
+    height=700,
+    width=600,
+    key=None,
+)
   st.markdown("""**I have recently graduate in 2021 and was not able to get a job in campus placement.So for last 3 months I have being reworking 
   for my passion in data science.I am currently doing internship upder Almabetter.**""")
   st.text(' ')
