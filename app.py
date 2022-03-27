@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import tensorflow as tf
 import keras 
+from streamlit_lottie import st_lottie
 from keras.preprocessing.image import load_img,img_to_array 
 import numpy as np
 import tensorflow as tf
@@ -10,7 +11,9 @@ import time
 from PIL import Image,ImageOps
 import json
 
-
+def load_lottiefile(filepath: str):
+  with open(filepath, "r") as f:
+    return json.load(f)
 
 def processing(image,model):
   image=np.asarray(image)
@@ -18,8 +21,19 @@ def processing(image,model):
   res=model.predict(image_dims)
   result=np.argmax(res)
   return result
-
+lottie_coding = load_lottiefile("sunshine.json")
 st.title('Agri-EI 🍀')
+st_lottie(
+    lottie_hello,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low", # medium ; high
+    renderer="svg", # canvas
+    height=700,
+    width=600,
+    key=None,
+)
 st.text('         ')
 st.text('         ')
 
