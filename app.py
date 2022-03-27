@@ -23,16 +23,8 @@ def processing(image,model):
   return result
 lottie_coding = load_lottiefile("girl-cycling-in-autumn.json")
 st.title('Agri-EI 🍀')
-st_lottie(
-    lottie_coding,
-    speed=1,
-    reverse=False,
-    loop=True,
-    quality="low", 
-    height=700,
-    width=600,
-    key=None,
-)
+st.markdown('**Disease Project for plants:-**')
+
 st.text('         ')
 st.text('         ')
 
@@ -55,21 +47,23 @@ selected=option_menu(
                 "nav-link-selected": {"background-color": "orange"},
             },
         )
-st_lottie(
-    lottie_coding,
+
+st.text('   ')
+st.text('   ')
+st.text('   ')
+st.text('   ')
+if(selected=='About 🖥️'):
+  lottie_coding1=load_lottiefile("girl-cycling-in-autumn.json")
+  st_lottie(
+    lottie_coding1,
     speed=1,
     reverse=False,
     loop=True,
     quality="low", 
-    height=400,
-    width=500,
+    height=700,
+    width=600,
     key=None,
 )
-st.text('   ')
-st.text('   ')
-st.text('   ')
-st.text('   ')
-if(selected=='About👨‍🏫'):
   st.header('About')
   st.image('images.jpg')
   st.markdown(""" **Plant diseases enormously affect the agricultural
