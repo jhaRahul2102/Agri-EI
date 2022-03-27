@@ -28,8 +28,7 @@ st_lottie(
     speed=1,
     reverse=False,
     loop=True,
-    quality="low", # medium ; high
-    renderer="svg", # canvas
+    quality="low", 
     height=700,
     width=600,
     key=None,
