@@ -54,17 +54,6 @@ st.text('   ')
 st.text('   ')
 st.text('   ')
 if(selected=='About 🖥️'):
-  lottie_coding1=load_lottiefile("girl-cycling-in-autumn.json")
-  st_lottie(
-    lottie_coding1,
-    speed=1,
-    reverse=False,
-    loop=True,
-    quality="low", 
-    height=700,
-    width=600,
-    key=None,
-)
   st.header('About')
   st.image('images.jpg')
   st.markdown(""" **Plant diseases enormously affect the agricultural
